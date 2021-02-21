@@ -1,0 +1,23 @@
+
+	#Legend_view.py
+
+import re
+
+from qgis.PyQt.QtCore import QSettings,QTranslator,QCoreApplication,Qt
+from qgis.PyQt.QtGui import QIcon
+from qgis.PyQt.QtWidgets import QAction,QDockWidget
+
+from qgis.Core import QgsSettings,QgsMessageLog,QgsProject,QgsExpressionContextUtils
+
+	#Initialize Qt resources from file resources.py
+
+from.resources_rc import*
+
+	#import the code for the dockwidget
+from.legend_view_dockwidget import LegendViewDockWidget
+import os.path
+
+
+
+
+class LegendView:
